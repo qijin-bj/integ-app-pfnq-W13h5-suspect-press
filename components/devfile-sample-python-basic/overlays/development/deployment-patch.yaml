@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/integration-e2e-tenant/integ-app-pfnq/devfile-sample-python-basic@sha256:64777064bd0dacde3c3e70219a55400ae05abed73f4add51d754c44442996523
+        name: my-python
+        resources: {}
+status: {}
